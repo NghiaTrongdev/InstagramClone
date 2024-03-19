@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZAZ-8G-jwT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZAZ-8G-jwT">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="-2851" y="215"/>
         </scene>
-        <!--Notifications View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="Ja5-v4-irv">
             <objects>
-                <viewController id="Bbl-7e-QzN" customClass="NotificationsViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bbl-7e-QzN" customClass="ProfileViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fc7-38-b3d">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +99,7 @@
         <scene sceneID="S4d-vc-7zQ">
             <objects>
                 <navigationController id="oH0-oa-bHR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="network" catalog="system" id="bwB-LE-yIM"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="bwB-LE-yIM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uqI-f3-tkT">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="-1975" y="215"/>
         </scene>
-        <!--Profile Edit View Controller-->
+        <!--Notifications View Controller-->
         <scene sceneID="ZZ4-sD-HEd">
             <objects>
-                <viewController id="WGb-68-mdr" customClass="ProfileEditViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WGb-68-mdr" customClass="NotificationsViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z3F-yV-i65">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
         <scene sceneID="tLr-wC-FDA">
             <objects>
                 <navigationController id="mx7-JW-viP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="bell.fill" catalog="system" id="tar-zL-AXf"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="tar-zL-AXf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yNG-fP-c95">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -165,7 +165,7 @@
         <scene sceneID="Mal-Kk-zwz">
             <objects>
                 <navigationController id="17L-Tj-WOZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="aAR-f2-u7B"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="aAR-f2-u7B"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6fB-5K-WaJ">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -196,9 +196,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell.fill" catalog="system" width="123" height="128"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="house" catalog="system" width="128" height="104"/>
-        <image name="network" catalog="system" width="128" height="123"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">

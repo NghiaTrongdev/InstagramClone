@@ -140,7 +140,6 @@ class LoginViewController: UIViewController {
             return
         }
         backgroundView.frame = headerView.bounds
-        
         let logoimageView = UIImageView(image: UIImage(named: "logotext"))
         logoimageView.contentMode = .scaleAspectFit
         headerView.addSubview(logoimageView)
@@ -168,7 +167,7 @@ class LoginViewController: UIViewController {
             username = usernameEmail
         }
         AuthManager.shared.loginUser(username: username, email: email, password: password){success in
-            DispatchQueue.main.sync {
+            DispatchQueue.main.async {
                 if success {
                     self.dismiss(animated: true,completion: nil)
                 } else {
@@ -200,7 +199,9 @@ class LoginViewController: UIViewController {
     }
     @objc private func didCreatenewAccountButtonTapped(){
         let vc = SignUpViewController()
-        present(vc, animated: true)
+        vc.title = "Create Account"
+        
+        present(UINavigationController(rootViewController: vc), animated: true)
     }
   
 }
